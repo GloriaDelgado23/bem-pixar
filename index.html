@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+<!-- HEADER -->
+
+    <header class="header">
+        <h1 class="header__h1">
+            <a href="https://www.pixar.com/" title="Ir a Pixar.com" class="header__logo">
+                <img src="assets/logo022.jpg" alt="Pixar" class="header__img">
+            </a>
+        </h1>
+
+        <nav class="header__nav">
+            <ul class="header__ul">
+                <li class="header__li">
+                    <a href="https://www.pixar.com/feature-films-launch" title="Ir a Featured Films" class="header__link">Featured Films</a>
+                </li>
+                <li class="header__li">
+                    <a href="https://www.pixar.com/theatrical-shorts" title="Ir a Short Films" class="header__link">Short Films</a>
+                </li>
+                <li class="header__li">
+                    <a href="https://www.pixar.com/technology" title="Ir a Technology" class="header__link">Technology</a>
+                </li>
+                <li class="header__li">
+                    <a href="https://www.pixar.com/careers" title="Ir a Careers" class="header__link">Careers</a>
+                </li>
+                <li class="header__li">
+                    <a href="https://www.pixar.com/extras" title="Ir a Extras" class="header__link">Extras</a>
+                </li>
+                <li class="header__li">
+                    <a href="https://www.pixar.com/about" title="Ir a About" class="header__link">About</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+<!-- MAIN -->
+
+    <main class="main">
+
+        <article class="inside">
+            <h2 class="inside__h2">
+                <a href="https://www.youtube.com/watch?v=LEjhY15eCx0" target="_blank" title="Ver trailer Inside Out 2" class="inside__a">
+                    <img src="assets/io2_logo.png" alt="Inside Out 2" class="inside__img"
+                    fetchpriority="high">
+                </a>
+            </h2>
+        </article>
+
+        <div class="columns">
+            <!-- Lo hemos puesto como div y no como section porque para que sea section tiene que haber un encabezado (h) denttro que relacione el contenido, pero si no lo hay entonces no. El article se usa cuando los elementos son independientes mientars que el section tiene que estar relacionado. -->
+            <artcile class="columns__article">
+                <a href="https://www.pixar.com/careers-at-pixar" title="Ver Careers at Pixar" class="columns__a">
+                     <img src="assets/image-asset.jpeg" alt="imagen" class="columns__img">
+                     <!-- loading="lazy" (solo se aplica a las imágenes que no se muestran nada más abrir la web, es decir, el navegador no se descarga las imágenes hasta que el usuario hace scroll y va a aparecer -> así se optimiza la carga de una web) 
+                    También se puede poner fetchpriority="high" si queremos que sea descargada de forma preferente-->
+                </a>
+                <h3 class="columns__h3">Careers at Pixar</h3>
+            </artcile>
+
+            <article class="columns__article">
+                <a href="https://www.youtube.com/watch?v=2w_K3CB8PuE" class="columns__a" title="Ver trailer Elio">
+                    <img src="assets/Home_Lower-elio.jpg" alt="imagen" class="colums__img">
+                </a>
+                <h3 class="columns__h3">Elio</h3>
+            </article>
+
+            <article class="columns__article">
+                <a href="https://www.pixar.com/win-or-lose" class="columns__a" title="Ver Win or Lose">
+                    <img src="assets/wl_lower.jpg" alt="imagen" class="columns__img">
+                </a>
+                <h3 class="colums__h3">Win or lose</h3>
+            </article>
+        </div>
+    
+    </main>
+
+<!-- FOOTER -->
+
+    <footer class="footer">
+        <!-- Los enlaces externos a la web no pueden ser nav, porque son externos, no internos -->
+
+        <ul class="footer__rrss">
+            <li class="rrss__li">
+                <a href="https://www.facebook.com/Pixar/" target="_blank" class="rrss__a">
+                    <img src="#" alt="Facebook" class="rrss__img">
+                </a>
+            </li>
+            <li class="rrss__li">
+                <a href="https://twitter.com/pixar" target="_blank" class="rrss__a">
+                    <img src="#" alt="Twitter" class="rrss__img">
+                </a>
+            </li>
+            <li class="rrss__li">
+                <a href="https://www.youtube.com/pixar" target="_blank" class="rrss__a">
+                    <img src="#" alt="Youtube" class="rrss__img">
+                </a>
+            </li>
+            <li class="rrss__li">
+                <a href="https://www.instagram.com/pixar/" target="_blank" class="rrss__a">
+                    <img src="#" alt="Instagram" class="rrss__img">
+                </a>
+            </li>
+        </ul>
+
+        <ul class="footer__policy">
+            <li class="policy__li">
+                <a href="https://privacy.thewaltdisneycompany.com/en/" target="_blank" class="policy__a">Privacy policy</a>
+            </li>
+            <li class="policy__li">
+                <a href="https://disneytermsofuse.com/" target="_blank" class="policy__a">Terms of use</a>
+            </li>
+            <li class="li">
+                <a href="https://privacy.thewaltdisneycompany.com/en/current-privacy-policy/your-us-state-privacy-rights/" target="_blank" class="policy__a">Your us state privacy rights</a>
+            </li>
+            <li class="li">
+                <a href="https://privacy.thewaltdisneycompany.com/en/for-parents/childrens-online-privacy-policy/" target="_blank" class="policy__a">Children's Online Privacy</a>
+            </li>
+            <li class="li">
+                <a href="https://preferences-mgr.truste.com/?affiliateId=115&type=disneycolor" target="_blank" class="policy__a">Interest-based ads</a>
+            </li>
+        </ul>
+
+        <div class="footer__copy">© 1986-2024 disney / pixar</div>
+
+        <button class="footer__button">
+            <a href="#" class="button__a">Do Not Sell or Share My Personal Information</a>
+        </button>
+
+
+    </footer>
+    
+</body>
+</html>

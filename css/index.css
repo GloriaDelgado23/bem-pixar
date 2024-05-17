@@ -1,0 +1,224 @@
+/* Reset CSS / Normalizador */
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    /* ¿Por qué si quito object-fit no pasa nada? */
+}*
+
+/* Una cosa recomendable es que los enlaces tengan aplicado en general el mismo estilo PERO no es recomendable que los que estén dentro de un párrafo apliquen dicho estilo. Para conseguir esto, en el Reset de CSS habría que esrcibir (fuera del +{})
+a{
+    display: block
+}
+
+p a {
+    display: inline
+{
+    
+De esta forma todos los enlaces a se mantendrán formato bloque mientras que los que estén dentro de un párrafo (p a) tendrán formato línea.
+
+También podemos aplicar a las imágenes en el reset lo siguiente:
+
+img{
+    display:block
+    width: 100%
+    height: initial
+}*/
+
+
+
+/* HEADER */
+
+.header{
+    width: 100%;
+    padding: 20px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.header__h1{
+    max-width: 100px;
+}
+
+.header__logo{}
+.header__img{}
+
+/* <!-- Con la metodología BEM se escribe primero el bloque contenedor y la última clase --> */
+
+.header__nav{}
+
+@media (max-width:768px){
+    .header .nav{
+        display: none;
+    }
+}
+
+.header__ul{
+    display: flex;
+    flex-flow: row nowrap;    
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+
+    list-style: none;
+}
+
+.header__li{}
+
+.header__link{}
+
+/* MAIN */
+
+.main{
+    padding: 7.5em 0 o;
+}
+
+/* La etiqueta .main{} No suele tener propiedades */
+
+/* MAIN - INSIDE */
+
+/* El ../ se utiliza para indicarle que salga de una carpeta (../) entre en otra (assets) y coge la imagen de ahí */
+
+.inside{
+    width: 100%;
+    min-height: 100vh;
+    background-color: blue;
+    background-image: url(../assets/io2bg.jpg);
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.inside__h2{
+    width: 90%;
+    max-width: 700px;
+    /* background-color: aquamarine; */
+}
+
+.inside__a{}
+.inside__img{}
+
+/* MAIN - COLUMN */
+
+.columns{
+    width: 80%;
+    max-width: 960px;
+    /* min-height: 300px; */
+    /* background-color: blue; */
+    margin: 50px auto;
+    gap: 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 800px){
+    .columns{
+        flex-direction: column;
+    }
+}
+
+.columns__article{
+    /* width: 100%; */
+}
+
+.columns__a{
+    min-height: 150px;
+    /* background-color: blueviolet; */
+    margin: 0 0 20px;
+
+    display: block;
+    /* Hay que poner display: block porque por defecto esta etiqueta de enlaces tiene dislay: inline (es decir, elemento en línea en lugar de elemento en bloque que es display: block) */
+}
+
+.columns__img{
+    /* width: ;
+    height: ;
+
+    object-fit: fill;
+    object-fit: scale-down;
+    object-fit: cover; */
+
+}
+
+.columns__h3{
+    /* background-color: violet; */
+}
+
+/* FOOTER */
+
+.footer{
+    width: 100%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+
+}
+
+/* FOOTER - RRSS */
+
+.footer__rrss{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    list-style: none;
+    
+}
+
+.rrss__li{}
+.rrss__a{}
+.rrss__img{}
+
+/* FOOTER - POLICY */
+
+.footer__policy{
+    list-style: none;
+
+    /* ME HE QUEDADO AQUI!!!!!!!!!!!! */
+}
+
+.policy__li{}
+.policy__a{}
+
+/* FOOTER - COPY */
+
+.footer__copy{}
+
+/* FOOTER- BUTTON */
+
+.footer__button{
+    padding: 20px 40px;
+    border: 2px solid green;
+
+    display: inline-block;
+}
+.button__a{}
+
+
+
+
